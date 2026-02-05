@@ -7,7 +7,7 @@ import {rowColumnIncrement} from "./helpers/rowColumnIncrement.ts";
 
 
 const App: React.FC = () => {
-    const [grid, setGrid] = useState(generateGrid(10, 10))
+    const [grid, setGrid] = useState(generateGrid(50, 50))
     const [activeRow, setActiveRow] = useState<number | undefined>(undefined)
     const [activeColumn, setActiveColumn] = useState<number | undefined>(undefined)
 
