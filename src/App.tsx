@@ -53,7 +53,7 @@ const App: React.FC = () => {
                 greenTimerRef.current = window.setTimeout(() => {
                     setGrid(prev => {
                         const copy = prev.map(r => r.slice());
-                        hits.forEach(([r,c]) => (copy[r][c] = 1)); // <-- clear
+                        hits.forEach(([r,c]) => (copy[r][c] = 1));
                         return copy;
                     });
                     setGreenCells(new Set());

@@ -1,7 +1,7 @@
 import type {Grid} from "../types/types.ts";
 
 export const rowColumnIncrement = (row: number, column: number, grid: Grid) => {
-    const newGrid = grid.map(i => i.slice());;
+    const newGrid = grid.map(i => i.slice());
     for (const rowIndex in newGrid) {
         if (Number(rowIndex) === row) {
             const newRow = newGrid[rowIndex];
