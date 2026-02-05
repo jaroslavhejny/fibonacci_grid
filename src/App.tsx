@@ -2,7 +2,7 @@ import * as React from "react";
 import {generateGrid} from "./helpers/generateGrid.ts";
 import {useState} from "react";
 import {Box} from "./components/Box.tsx";
-import './App.css'
+import './styles/App.css'
 
 
 const App: React.FC = () => {
