@@ -9,3 +9,7 @@
         cursor: pointer;
     }
 }
+
+.yellow {
+    background-color: yellow;
+}
