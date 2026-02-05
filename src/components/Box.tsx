@@ -6,8 +6,8 @@ interface BoxProps {
     columnIndex: number;
     onCellClick: (rowIndex: number, cellIndex: number) => void;
     value: number | null;
-    activeRow?: number;
-    activeColumn?: number;
+    isActive?: boolean;
+    isFibonacci?: boolean;
 }
 
 export const Box: React.FC<BoxProps> = ({
@@ -15,13 +15,13 @@ export const Box: React.FC<BoxProps> = ({
                                             columnIndex,
                                             onCellClick,
                                             value,
-                                            activeRow,
-                                            activeColumn
+                                            isFibonacci,
+                                            isActive,
                                         }: BoxProps) => {
-    const active = rowIndex === activeRow || columnIndex === activeColumn;
 
     return (
-        <div className={`box ${active ? 'yellow' : ''}`} onClick={() => onCellClick(rowIndex, columnIndex)}>
+        <div className={`box ${isFibonacci ? 'green' : isActive ? 'yellow' : ''}`}
+             onClick={() => onCellClick(rowIndex, columnIndex)}>
             {value}
         </div>)
 }
