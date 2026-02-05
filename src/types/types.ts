@@ -1,2 +1,2 @@
-export type CellValue = number | null;
+export type CellValue = number;
 export type Grid = CellValue[][];
